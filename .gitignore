@@ -1,0 +1,39 @@
+# Python / venv
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs / captures
+logs/
+captures/
+
+# Ultralytics / YOLO runs
+runs/
+
+# Model weights
+*.pt
+*.onnx
+
+# Datasets / รูปดิบ (ให้เก็บแยกไป Google Drive / Roboflow)
+datasets/
+data/
+images/
+raw_images/
+test_images/
+train_images/
+valid_images/
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Arduino / PlatformIO build
+.pio/
+.build/
+
+# Other
+.DS_Store
+Thumbs.db
