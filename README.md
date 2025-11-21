@@ -29,6 +29,54 @@
   - เซฟภาพเฟรม / ครอปเมล็ดตอน confirm และตอน eject แยกตามคลาส
 
 ---
+## System Overview
+
+1) กล้อง Webcam จับภาพเมล็ดบนสายพานแบบเรียลไทม์
+
+2) YOLO ตรวจจับเมล็ดและระบุตัวตนแต่ละเมล็ดด้วย ID (object tracking)
+
+3) สำหรับแต่ละ ID:
+
+  - เก็บประวัติ class หลายเฟรม → majority vote → ได้ confirmed_class
+
+  - นับสถิติเมล็ดดี / เมล็ดเสีย
+
+4) ถ้าเป็น เมล็ดเสีย และเข้ามาใน Arming Zone:
+
+  - เมื่อเวลาตรงกับ LEAD_TIME_MS → Python ส่งคำสั่ง 'A' ไป Arduino
+
+5) ฝั่ง Arduino:
+
+  - เปิดสถานะ isArmedForEjection = true
+
+  - รอเซ็นเซอร์ตรวจเจอเมล็ด (บนตำแหน่งยิง)
+
+  - ถ้า Armed → สั่งรีเลย์ให้กระบอกสูบยืด/หด ตาม CYLINDER_EXTEND_DURATION_MS / CYLINDER_RETRACT_DURATION_MS
+
+  - ส่งข้อความสถานะกลับ Python เช่น: STATUS:BAD_SEED_EJECTED STATUS:GOOD_SEED_PASSED
+
+6) Python แสดงผลบนหน้าจอ + บันทึก log / ภาพสำหรับวิเคราะห์ภายหลัง
+
+## Communication Protocol (Python ↔ Arduino)
+
+- **Python → Arduino**
+
+  - ส่ง byte 'A' เพื่อ ARM เมล็ดที่เป็น defect (เตรียมยิง)
+
+- **Arduino → Python**
+
+  - ข้อความ startup: "Enhanced Coffee Sorter - Arduino Ready"
+
+- **ขณะทำงาน:**
+
+  - "System ARMED. Waiting for sensor trigger..."
+
+  - "STATUS:BAD_SEED_EJECTED" เมื่อยิงเมล็ดเสียแล้ว
+
+  - "STATUS:GOOD_SEED_PASSED" เมื่อเมล็ดดีผ่านไป
+
+  - Heartbeat / log อื่น ๆ เช่น
+  `"Heartbeat - Armed: ... | Ready: ... | Total: ..."`
 
 ## Project Structure
 
