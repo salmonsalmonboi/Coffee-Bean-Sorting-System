@@ -13,9 +13,7 @@ SERIAL_PORT = 'COM5'  # Change to your Arduino port
 BAUD_RATE = 9600
 CAMERA_INDEX = 0
 
-# YOLO_MODEL_PATH = 'C:/Users/jokoz/Documents/Vscode-work/runs/detect/C-Webcam/train(webcam)-03-small/weights/best.pt'
-# YOLO_MODEL_PATH = 'C:/Users/jokoz/Documents/Vscode-work/Coffee-Bean-classification/V12s-15Class(Chipped)/weights/best.pt'
-YOLO_MODEL_PATH = 'D:/Vscode-work/Coffee-Bean-classification/V12s-15Class(A_AA_AAA_B_Chipped)/weights/best.pt' 
+YOLO_MODEL_PATH = 'YOUR_YOLO_MODEL_PATH.pt'  # Change to your YOLO model path
 
 # --- การตั้งค่ากล้อง ---
 CAMERA_WIDTH = 1920
