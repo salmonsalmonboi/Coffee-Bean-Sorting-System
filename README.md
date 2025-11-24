@@ -84,13 +84,17 @@
 .
 ├── src/
 │   └── Coffee-Bean-Classification-System.py           # โค้ด Python: YOLO + Webcam + Tracking + Serial
+│       └── requirements.txt                           # Python dependencies
 ├── arduino/
 │   └── coffee_sorter_controller/
 │       └── coffee_sorter_controller.ino               # โค้ด Arduino: คุมรีเลย์, เซ็นเซอร์, กระบอกสูบ
 ├── docs/
 │   └── ...                                            # รูปเครื่อง, diagram, ฯลฯ
-├── requirements.txt                                   # Python dependencies
 ├── .gitignore
 └── README.md
 
 ```
+## Author
+A. Chetsada jinamoon, B.Supakorn Sirimueangmoon , and C. Audsadakorn Jeerahut, D. Kwanchai Eurviriyanukul, G.  Pranote pookkapund
+> Department of Computer Engineering, Faculty of Engineering, Rajamangala University of Technology Lanna Chiang Mai, Thailand 
+
