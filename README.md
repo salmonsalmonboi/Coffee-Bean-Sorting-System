@@ -397,11 +397,20 @@ python src/Coffee-Bean-Classification-System.py
 
 ---
 
-## Author
+## Team
 
-**A.** Chetsada Jinamoon, **B.** Supakorn Sirimueangmoon, **C.** Audsadakorn Jeerahut, **D.** Kwanchai Eurviriyanukul, **G.** Pranote Pookkapund
+**Department of Computer Engineering, Faculty of Engineering, Rajamangala University of Technology Lanna Chiang Mai, Thailand**
 
-> Department of Computer Engineering, Faculty of Engineering, Rajamangala University of Technology Lanna Chiang Mai, Thailand
+**Students:** Supakorn Sirimueangmoon, Chetsada Jinamoon, Audsadakorn Jeerahut, Suphaloek Khamkoon  
+**Advisors:** Kwanchai Eurviriyanukul, Pranote Pookkapund  
+
+### Author Contributions
+* **Supakorn Sirimueangmoon:** Methodology, Software, Data curation, Investigation, Writing – original draft.
+* **Chetsada Jinamoon:** Resources, Investigation, Visualization, Hardware.
+* **Audsadakorn Jeerahut:** Investigation, Data curation.
+* **Suphaloek Khamkoon:** Data curation.
+* **Kwanchai Eurviriyanukul:** Supervision, Project administration, Writing – review & editing.
+* **Pranote Pookkapund:** Supervision, Validation.
 
 ---
 
