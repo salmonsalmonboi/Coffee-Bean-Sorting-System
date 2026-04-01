@@ -405,11 +405,11 @@ python src/Coffee-Bean-Classification-System.py
 **Advisors:** Kwanchai Eurviriyanukul, Pranote Pookkapund  
 
 ### Author Contributions
-* **Supakorn Sirimueangmoon:** Methodology, Software, Data curation, Investigation, Writing – original draft.
+* **Supakorn Sirimueangmoon:** Methodology, Software, Data curation, Investigation.
 * **Chetsada Jinamoon:** Resources, Investigation, Visualization, Hardware.
 * **Audsadakorn Jeerahut:** Investigation, Data curation.
 * **Suphaloek Khamkoon:** Data curation.
-* **Kwanchai Eurviriyanukul:** Supervision, Project administration, Writing – review & editing.
+* **Kwanchai Eurviriyanukul:** Supervision, Project administration.
 * **Pranote Pookkapund:** Supervision, Validation.
 
 ---
